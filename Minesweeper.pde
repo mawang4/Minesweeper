@@ -148,7 +148,7 @@ public class MSButton
         else if(mines.contains(this)){
              displayLosingMessage(); 
         } else if(countMines(myRow, myCol) > 0){
-             myLabel = Integer.toString(countMines(myRow, myCol));
+             myLabel = "" + countMines(myRow, myCol);
         } else {
               if(isValid(myRow - 1, myCol - 1) && buttons[myRow - 1][myCol - 1].clicked == false){
                 buttons[myRow - 1][myCol - 1].mousePressed();
